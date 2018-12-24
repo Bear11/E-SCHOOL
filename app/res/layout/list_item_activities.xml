@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+         <RelativeLayout
+                android:id="@+id/row_first"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_linerlayout"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imv_theme1"
+                    android:layout_width="130dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/for_test_home" />
+
+                <TextView
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/imv_theme1"
+                    android:text="@string/paobuxuanyan"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/eye"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/imv_theme1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_alarm" />
+
+                <TextView
+                    android:id="@+id/playtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/eye"
+                   
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/keep_eye"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@id/eye"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_eye" />
+
+                <TextView
+                    android:id="@+id/eye_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/keep_eye"
+                    android:text="898"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/free_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"               
+                    android:layout_below="@id/theme"
+                    android:layout_toRightOf="@id/eye_on"
+                    android:textColor="#e70000"
+                    android:textSize="18sp"
+                    
+                   />
+                   <!-- android:layout_alignRight="@id/theme" -->
+                    <!-- android:src="@drawable/icon_free_charge" --> 
+            </RelativeLayout>
+        
+</LinearLayout>
+</LinearLayout>

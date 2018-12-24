@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-7 19:55:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="com.ext.campus.po.CampusSurroundCommentView" table="campus_surround_comment">
+  
+   
+  <id name="id" type="int">
+   <column name="ID"/>
+   <generator class="native"/>
+  </id>
+
+  <property generated="never" lazy="false" name="CampusID" type="java.lang.Integer">
+   <column name="CAMPUSID"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="userAct" type="java.lang.String">
+   <column  name="USERACT"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="imageUrl" type="java.lang.String">
+   <column name="IMAGEURL"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="commentTime" type="java.util.Date">
+   <column name="COMMENTTIME"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="content" type="java.lang.String">
+   <column name="CONTENT"/>
+  </property>
+     
+ </class>
+</hibernate-mapping>

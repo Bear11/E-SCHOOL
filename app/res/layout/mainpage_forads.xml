@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainpage_forads"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+   		android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/left_pic"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/home_xf" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/left_pic"
+            android:text="校园新鲜事"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <TextView
+            android:id="@+id/view_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/title1"
+            android:text="今日1.2万人阅读"
+            android:textColor="#999999"
+            android:textSize="11sp"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <TextView
+            android:id="@+id/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="更多"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/right_pic1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/icon_arrow_right" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pic1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+   		android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/show1_pic"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/a3"
+            android:padding="2dp"
+            android:clickable="false"
+   		    android:focusable="false"
+        />
+ 
+        <ImageView
+            android:id="@+id/hengxian_pic"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/show1_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee"
+            android:clickable="false"
+   		    android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/run_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:clickable="true"
+   		android:focusable="true"  >
+
+        <ImageView
+            android:id="@+id/imv_tt"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_ads3"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/imv_tt"
+            android:text="@string/paobuxuanyan"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/eye1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imv_tt"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_alarm" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/eye1"
+            android:text="04-30"
+            android:textColor="#666666"
+            android:textSize="10sp" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+
+        <ImageView
+            android:id="@+id/keep_eye"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/eye1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_eye" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/keep_eye"
+            android:text="898"
+            android:textColor="#666666"
+            android:textSize="10sp"
+            android:clickable="false"
+   		    android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/free_charge"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_free_charge" 
+            android:clickable="false"
+   		    android:focusable="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imv_tt1"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_ads4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/imv_tt1"
+            android:text="风吹蛋蛋凉，这个季节最适合运动"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/eye2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imv_tt1"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_alarm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/eye2"
+            android:text="05-13"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/keep_eye2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/eye2"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_eye" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/keep_eye2"
+            android:text="1.5万"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/free_charge"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/textView3"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_free_charge" />
+    </RelativeLayout>
+    
+    
+    
+</LinearLayout>

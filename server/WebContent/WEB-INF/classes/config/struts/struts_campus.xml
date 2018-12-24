@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="EXT_campus" extends="ext_web">
+		<action name="campus_*" method="{1}"
+			class="com.ext.campus.action.CampusInformationAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="campus1_*" method="{1}"
+			class="com.ext.campus.action.CampusSurroundAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="click_*" method="{1}"
+			class="com.ext.campus.action.CampusSurroundsAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="scenery_*" method="{1}"
+			class="com.ext.campus.action.SceneryAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+		<action name="sceView_*" method="{1}"
+			class="com.ext.campus.action.SceneryViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+		<action name="school_*" method="{1}"
+			class="com.ext.campus.action.SchoolAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+    </package>
+</struts>   

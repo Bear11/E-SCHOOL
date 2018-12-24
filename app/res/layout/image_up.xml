@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	
+      <!-- 顶部标题 -->
+	<include android:id="@+id/title" layout="@layout/title2" />
+	<LinearLayout
+	    android:id="@+id/imageuplayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:layout_below="@+id/title"
+	    android:layout_gravity="center_horizontal"
+	    android:background="@drawable/input_box"  
+	    android:orientation="horizontal" >
+
+			<TextView android:layout_width="70dip"
+				android:text="取消备注"
+				android:textColor="@color/black" android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" />
+			<LinearLayout
+            android:id="@+id/myspinnerid"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/preference_single_item"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/spinnertextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1234"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/spinnertextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/spinnerimageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/mm_submenu_dropdown" />
+
+        </LinearLayout>
+
+			
+	</LinearLayout>
+
+
+    <GridView 
+        android:id="@+id/imageScrollgridview"
+         android:layout_below="@+id/imageuplayout1"
+        android:layout_width="290dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+    
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/imageUpSubmit"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/imageUpSave"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+</RelativeLayout>

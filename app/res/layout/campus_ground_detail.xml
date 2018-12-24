@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <!--校园周边资讯详情-->
+<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dip"
+	    android:orientation="horizontal"
+	    android:background="#0db8f6">
+	    <ImageView 
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="20dip"
+	        android:src="@drawable/f"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="center"
+	        android:textSize="16dip"
+	        android:textColor="#ffffff"
+	        android:text="返回"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginTop="10dip"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="70dip"
+	        android:layout_marginRight="70dip"
+	        android:textSize="20dip"
+	        android:textColor="#ffffff"
+	        android:text="资讯详情"
+	        android:layout_gravity="center"/>
+	</LinearLayout>
+	<TextView 
+	    android:id="@+id/campus_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="资讯标题"
+	    android:textSize="20dip"
+	    android:layout_marginLeft="20dip"
+	    android:layout_marginTop="20dip"
+	    />
+	<TextView 
+	    android:id="@+id/time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="2016-10-6 9:56:45"
+	    android:textSize="15dip"
+	    android:layout_marginLeft="20dip"
+	    android:layout_marginTop="5dip"
+	    />
+	<TextView 
+	    android:id="@+id/information"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="最近看了一本书叫《老人与海》，作者是海明威， 著名小说家，看完整本书感觉收获很多，主要是精神上的，建议大家可以看看~"
+	    android:textSize="15dip"
+	    android:layout_marginRight="20dip"
+	    android:layout_marginLeft="20dip"
+	    android:layout_marginTop="5dip"
+	    />
+	<ImageView 
+	    android:id="@+id/image1"
+	    android:layout_marginTop="10dip"
+	    android:layout_height="100dip"
+	    android:layout_marginLeft="30dip"
+	    android:layout_marginRight="30dip"
+	    android:background="@drawable/a1"/>
+	<TextView 
+	    android:id="@+id/information2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="最近看了一本书叫《老人与海》，作者是海明威， 著名小说家，看完整本书感觉收获很多，主要是精神上的，建议大家可以看看~"
+	    android:textSize="15dip"
+	    android:layout_marginRight="20dip"
+	    android:layout_marginLeft="20dip"
+	    android:layout_marginTop="5dip"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="EXT_trade" extends="ext_web">
+		<action name="trade_*" method="{1}"
+			class="com.ext.trade.action.GoodsAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="goodsV_*" method="{1}"
+			class="com.ext.trade.action.GoodsViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="items_*" method="{1}"
+			class="com.ext.trade.action.ItemsAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="itemsV_*" method="{1}"
+			class="com.ext.trade.action.ItemsViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+    </package> 
+</struts>   

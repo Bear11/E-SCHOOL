@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-7 19:55:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="com.ext.campus.po.SetCampusSurround" table="campus_surround">
+  
+  <id name="id" type="int">
+   <column name="ID"/>
+   <generator class="native"/>
+  </id>  
+  
+  <property generated="never" lazy="false" name="address" type="java.lang.String">
+   <column  name="ADDRESS"/>
+  </property>
+ 
+  <property generated="never" lazy="false" name="note" type="java.lang.String">
+   <column  name="NOTE" />
+  </property>
+  
+  <property generated="never" lazy="false" name="imageUrl" type="java.lang.String">
+   <column name="IMAGEURL"/>
+  </property>
+  
+   <property generated="never" lazy="false" name="playTime" type="java.lang.String">
+   <column name="PLAYTIME"/>
+  </property>
+  
+    <property generated="never" lazy="false" name="PERSONID" type="java.lang.Integer">
+   <column name="PERSONID"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="clickNumber" type="java.lang.Integer">
+   <column name="CLICKNUMBER"/>
+  </property>
+ 
+  <property generated="never" lazy="false" name="commentNumber" type="java.lang.Integer">
+   <column name="COMMENTNUMBER"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="forwardNumber" type="java.lang.Integer">
+   <column name="FORWARDNUMBER"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="schoolId" type="java.lang.Integer">
+   <column name="SCHOOLID"/>
+  </property>
+     
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.campus.AddCampusGround" >
+
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#eff1e7" >
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:hint="你發佈的內容经过筛选坚定后，将会存入表格，而后发表在校园资讯社区，期待您的评价~~"
+            android:maxLines="5"
+            android:minHeight="35dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fb_dis"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="180dp"
+            android:background="#ffffff"
+            android:hint="请输入详细地点~~"
+            android:maxLines="5"
+            android:minHeight="35dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        
+        <GridView 
+	        android:id="@+id/noScrollgridview"
+	        android:layout_width="280dp"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="230dp"
+	        android:horizontalSpacing="3dp"        
+	        android:numColumns="4"
+	        android:scrollbars="none"
+	        android:verticalSpacing="5dp" >
+    	</GridView>
+
+        
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fb_dis"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="#a69e85"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="发布"
+            android:textColor="#ccffffff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

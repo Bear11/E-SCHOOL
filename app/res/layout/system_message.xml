@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0db8f6" >
+
+        <ImageView
+            android:id="@+id/back_to"
+            android:layout_width="38.5dip"
+            android:layout_height="19.5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickLiftMenu"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="11.0dip"
+            android:src="@drawable/icon_white_back" />
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/system_msg"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/newsimg"
+            android:layout_width="64dp"
+            android:layout_height="64dp"        
+            android:layout_centerHorizontal="true" 
+            android:src="@drawable/icon_news_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsimg"        
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" 
+            android:text="暂时无系统消息~"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

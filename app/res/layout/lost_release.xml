@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 商品详情，赠品页面 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <!-- 第一部分 头部 -->
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#f7f7f7" >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="38.5dip"
+                    android:layout_height="19.5dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="onClickLiftMenu"
+                    android:paddingLeft="11.0dip"
+                    android:paddingRight="11.0dip"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="详情描述"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:text="发送"
+                    android:textColor="#3b9518"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@id/title"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/shuxian_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#c8c7cc" />
+
+                <ImageView
+                    android:id="@+id/goods_add_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/icon_addpic_unfocused" />
+
+                <TextView
+                    android:id="@+id/shuxian_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hh"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:background="#f3f6f8" />
+
+            <RadioGroup
+                android:id="@+id/for_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/items_lost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="true"
+                    android:text="发布失物"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/items_give"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="赠送物品"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/row_one"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/title"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/shuxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#c8c7cc" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="物品名称"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/goodsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/text1"
+                    android:background="@null"
+                    android:hint="请输入物品名~"
+                    android:textColor="#4e6cef"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/shuxian1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/row_one"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/tt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="联系方式"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/tt3"
+                    android:background="@null"
+                    android:hint="请输入手机号码"
+                    android:textColor="#4e6cef"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_four"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@id/row_phone"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#f3f6f8" />
+
+                <TextView
+                    android:id="@+id/shuxian5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/text4"
+                    android:background="#c8c7cc" />
+
+                <EditText
+                    android:id="@+id/goodsdescribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shuxian5"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:hint="描述物品的特征，有助于寻到失主或者捡到的人哦~"
+                    android:maxLines="7"
+                    android:textColor="#4e6cef"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shuxian6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="15dp"
+                android:background="#c8c7cc" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

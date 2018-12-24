@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 分享文字页面 -->
+
+
+    <!-- 第一部分 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7189f2" >
+
+        <ImageView
+            android:id="@+id/back_to"
+            android:layout_width="38.5dip"
+            android:layout_height="19.5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickLiftMenu"
+            android:paddingLeft="11.0dip"
+            android:paddingRight="11.0dip"
+            android:src="@drawable/icon_white_back" />
+
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_white_click" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/words"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 第二部分 编辑文字区域 -->
+
+    <RelativeLayout
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/sw"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="分享新鲜事儿..."
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <!-- 第三部分 图形界面区域 -->
+
+    <RelativeLayout
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/icon_smile_check" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/icon_at" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ico_weizhi" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

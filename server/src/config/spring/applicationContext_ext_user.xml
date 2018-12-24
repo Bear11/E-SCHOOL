@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	       http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<!-- UserInformation -->
+	<bean id="userInformation" class="com.ext.user.po.UserInformation"
+		scope="prototype" autowire="byName" />
+	<bean id="userInformationDao" class="com.ext.user.dao.UserInformationDao"
+		scope="prototype" autowire="byName" />
+	<bean id="userInformationBo" class="com.ext.user.bo.impl.UserInformationBoImpl"
+		scope="prototype" autowire="byName" />
+
+	
+	
+
+	<!-- CommentFirst -->
+	<bean id="commentFirst" class="com.ext.user.po.CommentFirst"
+		scope="prototype" autowire="byName" />
+	<bean id="commentFirstDao" class="com.ext.user.dao.CommentFirstDao"
+		scope="prototype" autowire="byName" />
+	<bean id="commentFirstBo" class="com.ext.user.bo.impl.CommentFirstBoImpl"
+		scope="prototype" autowire="byName" />
+
+	<!-- CommentSecond -->
+	<bean id="commentSecond" class="com.ext.user.po.CommentSecond"
+		scope="prototype" autowire="byName" />
+	<bean id="commentSecondDao" class="com.ext.user.dao.CommentSecondDao"
+		scope="prototype" autowire="byName" />
+	<bean id="commentSecondBo" class="com.ext.user.bo.impl.CommentSecondBoImpl"
+		scope="prototype" autowire="byName" />
+
+	<!-- Course -->
+	<bean id="course" class="com.ext.user.po.Course" scope="prototype"
+		autowire="byName" />
+	<bean id="courseDao" class="com.ext.user.dao.CourseDao" scope="prototype"
+		autowire="byName" />
+	<bean id="courseBo" class="com.ext.user.bo.impl.CourseBoImpl"
+		scope="prototype" autowire="byName" />
+
+	<!-- MyCollect -->
+	<bean id="myCollect" class="com.ext.user.po.MyCollect" scope="prototype"
+		autowire="byName" />
+	<bean id="myCollectDao" class="com.ext.user.dao.MyCollectDao"
+		scope="prototype" autowire="byName" />
+	<bean id="myCollectBo" class="com.ext.user.bo.impl.MyCollectBoImpl"
+		scope="prototype" autowire="byName" />
+
+	<!-- MyCourse -->
+	<bean id="myCourse" class="com.ext.user.po.MyCourse" scope="prototype"
+		autowire="byName" />
+	<bean id="myCourseDao" class="com.ext.user.dao.MyCourseDao" scope="prototype"
+		autowire="byName" />
+	<bean id="myCourseBo" class="com.ext.user.bo.impl.MyCourseBoImpl"
+		scope="prototype" autowire="byName" />
+	
+	<!-- MyCollect -->
+	<bean id="collectShare" class="com.ext.user.po.CollectShare" scope="prototype"
+		autowire="byName" />
+	<bean id="collectShareDao" class="com.ext.user.dao.CollectShareDao" scope="prototype"
+		autowire="byName" />
+	<bean id="collectShareBo" class="com.ext.user.bo.impl.CollectShareBoImpl"
+		scope="prototype" autowire="byName" />
+	
+	<!-- MyCollect -->
+	<bean id="myActivityView" class="com.ext.user.po.MyActivityView" scope="prototype"
+		autowire="byName" />
+	<bean id="myActivityViewDao" class="com.ext.user.dao.MyActivityViewDao"
+		scope="prototype" autowire="byName" />
+	<bean id="myActivityViewBo" class="com.ext.user.bo.impl.MyActivityViewBoImpl"
+		scope="prototype" autowire="byName" />
+	
+
+	<!-- MyFollow -->
+	<bean id="myFollow" class="com.ext.user.po.MyFollow" scope="prototype"
+		autowire="byName" />
+	<bean id="myFollowDao" class="com.ext.user.dao.MyFollowDao" scope="prototype"
+		autowire="byName" />
+	<bean id="myFollowBo" class="com.ext.user.bo.impl.MyFollowBoImpl"
+		scope="prototype" autowire="byName" />
+	
+	<!-- user_and_school_information_ -->
+	<bean id="user_and_school_information_" class="com.ext.user.po.User_and_school_information_" scope="prototype"
+		autowire="byName" />
+	<bean id="user_and_school_information_Dao" class="com.ext.user.dao.User_and_school_information_Dao" scope="prototype"
+		autowire="byName" />
+	<bean id="user_and_school_information_Bo" class="com.ext.user.bo.impl.User_and_school_information_BoImpl"
+		scope="prototype" autowire="byName" />
+
+	<!-- user_follow -->
+	<bean id="userFollow" class="com.ext.user.po.UserFollow" scope="prototype"
+		autowire="byName" />
+	<bean id="userFollowViewDao" class="com.ext.user.dao.UserFollowViewDao" scope="prototype"
+		autowire="byName" />
+	<bean id="userFollowViewBo" class="com.ext.user.bo.impl.UserFollowViewBoImpl"
+		scope="prototype" autowire="byName" />
+	
+	<!-- user_goods -->
+	<bean id="userGoodsView" class="com.ext.user.po.UserGoodsView" scope="prototype"
+		autowire="byName" />
+	<bean id="userGoodsViewDao" class="com.ext.user.dao.UserGoodsViewDao" scope="prototype"
+		autowire="byName" />
+	<bean id="userGoodsViewBo" class="com.ext.user.bo.impl.UserGoodsViewBoImpl"
+		scope="prototype" autowire="byName" />
+	
+	
+	<!-- MyGoods -->
+	<bean id="myGoods" class="com.ext.user.po.MyGoods" scope="prototype"
+		autowire="byName" />
+	<bean id="myGoodsDao" class="com.ext.user.dao.MyGoodsDao" scope="prototype"
+		autowire="byName" />
+	<bean id="myGoodsBo" class="com.ext.user.bo.impl.MyGoodsBoImpl" scope="prototype" autowire="byName" />
+	
+	<!-- MyGoods -->
+	<bean id="myShareView" class="com.ext.user.po.MyShareView" scope="prototype"
+		autowire="byName" />
+	<bean id="myShareViewDao" class="com.ext.user.dao.MyShareViewDao" scope="prototype"
+		autowire="byName" />
+	<bean id="myShareViewBo" class="com.ext.user.bo.impl.MyShareViewBoImpl" scope="prototype" autowire="byName" />
+
+	<!--View视图 -->
+
+</beans>

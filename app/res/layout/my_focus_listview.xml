@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:orientation="horizontal" >
+
+        <com.example.ext.common.imageCarousel.CircleImageView
+            android:id="@+id/head"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_defalft_headpic" />
+		
+  			
+        
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个性签名（仅限20个字）"
+                android:textColor="#C4C4C4" />
+      	</LinearLayout>
+      	
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:background="@drawable/border_linerlayout_foucus"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dip"
+                android:text="已关注"
+                android:textColor="#3A5FCD" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

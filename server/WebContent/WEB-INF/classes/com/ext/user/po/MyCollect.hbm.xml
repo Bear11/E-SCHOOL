@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-7 19:55:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="com.ext.user.po.MyCollect" table="my_collect">
+  <id name="id" type="int">
+   <column name="ID"/>
+   <generator class="native"/>
+  </id>
+  
+  <property generated="never" lazy="false" name="personId" type="int">
+   <column name="PERSONID"/>
+  </property>
+  
+ <property generated="never" lazy="false" name="shareId" type="int">
+   <column name="SHAREID"/>
+  </property>
+  
+ <property generated="never" lazy="false" name="activityId" type="int">
+   <column name="ACTIVITYID"/>
+  </property>
+     
+ </class>
+</hibernate-mapping>

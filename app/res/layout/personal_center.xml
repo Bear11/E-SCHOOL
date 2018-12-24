@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 个人中心页面 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+             >
+
+           
+        </LinearLayout>
+
+
+        <com.example.ext.common.imageCarousel.CircleImageView
+            android:id="@+id/head"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginTop="45dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/my_defalft_headpic" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:drawableLeft="@drawable/icon_woman"
+            android:layout_gravity="center_horizontal"
+            android:text="昵称"
+            android:textColor="#0db8f6"
+            android:textSize="22dip" />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/school"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dip"
+            android:textColor="#0db8f6" 
+            android:text="所在学校" />
+        <LinearLayout 
+            android:layout_height="80dip"
+            android:layout_width="match_parent"
+            android:layout_marginTop="145dip"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            
+            <TextView
+	            android:id="@+id/signature"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginLeft="15dip"
+	            android:drawablePadding="15dip"
+	            android:drawableLeft="@drawable/icon_heart"
+	            android:textColor="#4169E1"
+	            
+	            android:text="个性签名（仅限20个字）"
+	            android:textSize="16dip" />
+            
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="205dip"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <RadioButton
+                    android:id="@+id/lesson"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableTop="@drawable/lesson"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/lesson"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/me"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableTop="@drawable/me"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/me"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/concern"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableTop="@drawable/concern"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/concern"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/goods"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableTop="@drawable/goods"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/goods"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                
+
+                
+            </RadioGroup>
+        </LinearLayout>
+        
+    </FrameLayout>
+    <LinearLayout
+            android:id="@+id/id_switch_tab_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffebcd"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/id_tab_chat_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/information_color"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/id_chat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/partook"
+                    android:drawablePadding="10dip"
+                    android:gravity="center"
+                    android:text="我的分享"
+                    android:textColor="#666666"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_tab_friend_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/information_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:saveEnabled="false" >
+
+                <TextView
+                    android:id="@+id/id_friend_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/collect"
+                    android:drawablePadding="10dip"
+                    android:gravity="center"
+                    android:text="我的收藏"
+                    android:textColor="#666666"
+                    android:textSize="16dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+           
+        </LinearLayout>
+         <ImageView
+            android:id="@+id/id_tab_line_iv"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_selected_pressed_holo"
+            android:contentDescription="tab" >
+        </ImageView>
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/id_page_vp"
+	        android:background="#ffffff"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

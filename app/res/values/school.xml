@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="school">
+		<item>厦门理工学院</item>
+		<item>朝阳科技大学</item>
+		<item>集美大学</item>
+	</string-array>
+	<string-array name="shezi">
+		<item>只有我</item>
+		<item>好友</item>
+		<item>任何人</item>
+	</string-array>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	       http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+  <!-- Goods -->
+	<bean id="goods" class="com.ext.trade.po.Goods" scope="prototype" autowire="byName" />
+	<bean id="goodsDao" class="com.ext.trade.dao.GoodsDao" scope="prototype" autowire="byName" />
+    <bean id="goodsBo" class="com.ext.trade.bo.impl.GoodsBoImpl" scope="prototype" autowire="byName" /> 
+   
+  <!-- Items -->
+	<bean id="items" class="com.ext.trade.po.Items" scope="prototype" autowire="byName" />
+	<bean id="itemsDao" class="com.ext.trade.dao.ItemsDao" scope="prototype" autowire="byName" />
+    <bean id="itemsBo" class="com.ext.trade.bo.impl.ItemsBoImpl" scope="prototype" autowire="byName" /> 
+   
+    
+    
+    <!--View视图 -->
+       <!-- GoodsView -->
+	<bean id="goodsView" class="com.ext.trade.po.GoodsView" scope="prototype" autowire="byName" />
+	<bean id="goodsViewDao" class="com.ext.trade.dao.GoodsViewDao" scope="prototype" autowire="byName" />
+    <bean id="goodsViewBo" class="com.ext.trade.bo.impl.GoodsViewBoImpl" scope="prototype" autowire="byName" /> 
+       <!-- ItemsView -->
+	<bean id="itemsView" class="com.ext.trade.po.ItemsView" scope="prototype" autowire="byName" />
+	<bean id="itemsViewDao" class="com.ext.trade.dao.ItemsViewDao" scope="prototype" autowire="byName" />
+    <bean id="itemsViewBo" class="com.ext.trade.bo.impl.ItemsViewBoImpl" scope="prototype" autowire="byName" /> 
+   
+   </beans>

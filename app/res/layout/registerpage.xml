@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" > 
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_linerlayout"
+        android:orientation="vertical" >
+
+         
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/t"
+            android:drawablePadding="6sp"
+            android:hint="请输入您的用户名"
+            android:textColor="#3D3D3D"
+            android:textColorHint="#A3B1CA"
+            android:textSize="15sp" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="4dp"
+            android:background="#F2F2F2" >
+        </View>
+
+        <EditText
+            android:id="@+id/inSchool1"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_in_school"
+            android:drawablePadding="8sp"
+            android:drawableRight="@drawable/ic_category_expand_pressed"
+            android:hint="请选择您所在学校名"
+            android:textColor="#3D3D3D"
+            android:textColorHint="#A3B1CA"
+            android:textSize="15sp" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="4dp"
+            android:background="#F2F2F2" >
+        </View>
+
+        <EditText
+            android:id="@+id/toSchool1"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_go_school"
+            android:drawablePadding="6sp"
+            android:drawableRight="@drawable/ic_category_expand_pressed"
+            android:hint="请选择您要交流的学校"
+            android:textColor="#3D3D3D"
+            android:textColorHint="#A3B1CA"
+            android:textSize="15sp" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="2dp"
+            android:background="#F2F2F2" >
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:text=" 请记住密码避免遗失"
+            android:textColor="#108AC6"
+            android:textSize="10sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="2dp"
+            android:background="#F2F2F2" >
+        </View>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_locked"
+            android:drawablePadding="11sp"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:textColorHint="#A3B1CA"
+            android:textSize="15sp" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_1"
+        android:gravity="center"
+        android:text="注  册"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

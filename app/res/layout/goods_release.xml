@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.campus.AddCampusGround" >
+
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dip"
+        android:background="#ffe4b5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" >
+		<LinearLayout 
+	        android:layout_height="35dip"
+	        android:layout_width="match_parent"
+	        android:background="#6699ff">
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"
+	            android:text="发布商品"
+	            android:gravity="center_horizontal"
+	            android:layout_marginTop="5dip"
+	            android:textColor="#ffffff"
+	            android:textSize="20dip"/>
+	    </LinearLayout>
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="200dp"
+            android:background="#ffffff"
+            android:hint="您发布的商品，不经过我们手中，详情由同学之间自行交易~~"
+            android:maxLines="5"
+            android:minHeight="35dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/fb_dis"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="65dp"
+            android:background="#ffffff"
+            android:hint="商品名~~"
+            android:maxLines="5"
+            android:minHeight="35dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <GridView 
+	        android:id="@+id/noScrollgridview"
+	        android:layout_width="200dp"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="110dp"
+	        android:horizontalSpacing="3dp"        
+	        android:numColumns="2"
+	        android:scrollbars="none"
+	        android:verticalSpacing="5dp" >
+    	</GridView>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fb_dis"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="#a69e85"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="发布"
+            android:textColor="#ccffffff"
+            android:textSize="13sp" />
+        	<TextView 
+        	    android:id="@+id/num"
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content"
+        	    android:layout_marginTop="375dip"
+        	    android:layout_marginLeft="110dip"
+        	    android:text="0"
+        	    android:textSize="20dip"
+        	    android:textColor="#6699ff"
+        	    />
+        	<ImageView 
+        	    android:id="@+id/add"
+        	    android:layout_height="40dip"
+        	    android:layout_width="40dip"
+        	    android:layout_marginTop="365dip"
+        	    android:layout_marginLeft="50dip"
+        	    android:background="@drawable/jiahao"/>
+        	<ImageView 
+        	    android:id="@+id/jian"
+        	    android:layout_height="50dip"
+        	    android:layout_width="50dip"
+        	    android:layout_marginTop="358dip"
+        	    android:layout_marginLeft="135dip"
+        	    android:background="@drawable/jianhao"/>
+        	<TextView 
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content"
+        	    android:layout_marginTop="374dip"
+        	    android:layout_marginLeft="10dip"
+        	    android:text="数量"
+        	    android:textSize="20dip"
+        	    android:textColor="#6699ff"/>
+        	
+        	
+        	<TextView 
+        	    android:id="@+id/price"
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content"
+        	    android:layout_marginTop="410dip"
+        	    android:layout_marginLeft="230dip"
+        	    android:text="0"
+        	    android:textSize="20dip"
+        	    android:textColor="#6699ff"
+        	    />
+        	<ImageView 
+        	    android:id="@+id/add1"
+        	    android:layout_height="40dip"
+        	    android:layout_width="40dip"
+        	    android:layout_marginTop="400dip"
+        	    android:layout_marginLeft="170dip"
+        	    android:background="@drawable/jiahao"/>
+        	<ImageView 
+        	    android:id="@+id/jian1"
+        	    android:layout_height="50dip"
+        	    android:layout_width="50dip"
+        	    android:layout_marginTop="393dip"
+        	    android:layout_marginLeft="255dip"
+        	    android:background="@drawable/jianhao"/>
+        	<TextView 
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content"
+        	    android:layout_marginTop="409dip"
+        	    android:layout_marginLeft="125dip"
+        	    android:text="價格"
+        	    android:textSize="20dip"
+        	    android:textColor="#6699ff"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

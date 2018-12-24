@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">e校通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_detail">ActivityDetail</string>
+    <string name="hudong">校园</string>
+    <string name="jieyue">搭讪</string>
+    <string name="qiangzuo">抢座</string>
+    <string name="xinshengdaohang">易物</string>
+    <string name="faxian">我的</string>
+    <string name="title_activity_xin_sheng_dao_hang_fragment">XinShengDaoHangFragment</string>
+    <string name="title_activity_fa_xian_fragment">FaXianFragment</string>
+    <string name="tongzhi">通知</string>
+    <string name="dongtai">动态</string>
+    <string name="title_activity_tong_zhi">TongZhiActivity</string>
+    <string name="peoplelooking">大家都在看</string>
+    <string name="zixun">资讯</string>
+    <string name="zhoubian">周边</string>
+    <string name="fengjingqiang">风景</string>
+    <string name="ditu">校园地图</string>
+    <string name="activityrecruitment">活动招募令</string>
+    <string name="sharingcenter">分享中心</string>
+    <string name="huorejinxing">火热进行中</string>
+    <string name="yijieshu">已结束</string>
+    <string name="paobuxuanyan">既然青春留不住，那就穿着秋裤来跑步！</string>
+    <string name="usernicheng">用户昵称1</string>
+    <string name="usernicheng2">用户昵称2</string>
+    <string name="nowtime">2016-4-30</string>
+    <string name="nowtime1">4-30 12:10</string>
+    <string name="XMUT">厦门理工学院</string>
+    <string name="huodong">活动</string>
+    <string name="charge">跳蚤市场</string>
+    <string name="share">分享</string>
+    <string name="classchart">课程表</string>
+    <string name="words">文字</string>
+    <string name="picture">图片</string>
+    <string name="queding">确定</string>
+    <string name="activitydetails">活动详情</string>
+    <string name="faburen">发布人 :</string>
+    <string name="timeisup">报名截止 :</string>
+    <string name="act_time">活动时间 :</string>
+    <string name="act_address">活动地址 :</string>
+    <string name="number">报名人数 :</string>
+     <string name="limit_number">人数限制 :</string>
+     <string name="act_theme">活动主题 :</string>
+    <string name="shengyu">剩余票数 :</string>
+    <string name="activity_money">活动费用 :</string>
+    <string name="act_describe">详细描述 :</string>
+     <string name="pic_shangchuan">上传图片 :</string>   
+
+ 
+    
+    <string name="lesson">课程表</string>
+    <string name="me">个人资讯</string>
+    <string name="concern">我的关注</string>
+    <string name="partook">分享</string>
+    <string name="collect">我的收藏</string>
+    <string name="friend">我的好友</string>
+    <string name="goods">我的商品</string>
+    <string name="loschool">请选择所在学校</string>
+    <string name="goschool">请选择要去学校</string>
+    
+     <string name="see_more">查看更多</string>   
+     <string name="seen_more">查看更多</string>
+     <string name="loading">加载中</string>
+     <string name="drop_dowm">下拉</string>
+     <string name="release_update">释放更新</string>
+     
+      <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">未完成</string> 
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="no_choose_photo">您还没有选择图片</string>
+    <string name="upload_photo_error">上传图片出现异常</string>
+
+    <string name="system_msg">系統消息</string>
+    
+
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+
+</resources>

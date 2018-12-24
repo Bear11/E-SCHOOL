@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00000000">
+
+    <!-- 学校名 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#22ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+      
+        <TextView
+            android:id="@+id/schoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="朝阳科技大学"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+     
+    </LinearLayout>
+    <!-- 图片分类 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <!-- 分类名 1 校内美图 -->
+
+        <LinearLayout
+            android:id="@+id/layout_school_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                >
+
+                <ImageView
+                    android:id="@+id/img_school_view"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/plugin_camera_no_pictures" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#00ffffff"
+                    android:gravity="center_vertical" 
+                >
+
+                    <TextView
+                        android:id="@+id/img_school_view_num"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="数量 (0)"
+                        android:textColor="#CD6600"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <!-- <TextView
+                android:id="@+id/iv_school_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="校内美图"
+                android:textColor="#ffffff"
+                android:textSize="14sp" /> -->
+            
+            <ImageView 
+                android:id="@+id/iv_school_view"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_campus_view"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+        <!-- 分类名 2 周边美景 -->
+
+        <LinearLayout
+            android:id="@+id/layout_surround_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff" >
+
+                <ImageView
+                    android:id="@+id/img_surround_view"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/plugin_camera_no_pictures" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00ffffff"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/img_surround_view_num"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="数量 (0)"
+                        android:textColor="#CD6600"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+             <ImageView 
+                android:id="@+id/img_surround"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_surr_view"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+        <!-- 分类名 3 随手拍 -->
+
+        <LinearLayout
+            android:id="@+id/layout_photo_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff" >
+
+                <ImageView
+                    android:id="@+id/img_photo_view"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/plugin_camera_no_pictures" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00ffffff"
+                    android:gravity="center_vertical" >
+ 
+                    <TextView
+                        android:id="@+id/img_photo_view_num"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="数量 (0)"
+                        android:textColor="#CD6600"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+           <ImageView 
+                android:id="@+id/img_bycal"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_bycas_view"
+                android:background="@null"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

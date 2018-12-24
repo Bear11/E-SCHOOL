@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--校园地图-->    
+
+        <RelativeLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+	  		<LinearLayout
+			    android:layout_width="fill_parent"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="horizontal"
+		    	android:textColor="#ffffff">
+	  			<com.lee.pullrefresh.ui.PullToRefreshListView
+	        		android:id="@+id/mPullRefreshListView"
+	        		android:layout_width="match_parent"
+	        		android:layout_height="match_parent"
+	        		android:cacheColorHint="#00000000"
+	        		android:divider="#efefef" />
+	  		</LinearLayout>
+	  		<ImageView
+	            android:id="@+id/add"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="60dp"
+	            android:layout_marginRight="10dp"
+	            android:background="#00ffffff"
+	            android:src="@drawable/icon_button_plus" />
+	  		
+  		</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:orientation="vertical" >
+   
+   <RelativeLayout
+       android:id="@+id/pop_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"      
+        android:background="#eff1e7"
+         >
+
+        <EditText
+            android:id="@+id/fb_dis"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:maxLines="5"
+            android:singleLine="false"           
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"         
+            android:background="#ffffff"
+            android:hint="期待你的神评~"
+            android:paddingLeft="5dp"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <TextView 
+            android:id="@+id/send"
+            android:layout_below="@id/fb_dis"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"      
+            android:layout_marginTop="10dp"      
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="#ccffffff"
+            android:textSize="13sp"
+            android:background="#a69e85"
+            android:paddingLeft="5dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-7 19:55:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="com.ext.activities.po.Activities" table="activity">
+  <id name="id" type="int">
+   <column name="ID"/>
+   <generator class="native"/>
+  </id>
+  
+  <property generated="never" lazy="false" name="actTime" type="java.util.Date">
+   <column  name="ACTTIME"/>
+  </property>
+ 
+  <property generated="never" lazy="false" name="topic" type="java.lang.String">
+   <column  name="TOPIC" />
+  </property>
+  
+   <property generated="never" lazy="false" name="address" type="java.lang.String">
+   <column  name="ADDRESS" />
+  </property>
+  <property generated="never" lazy="false" name="discribe" type="java.lang.String">
+   <column name="DISCRIBE"/>
+  </property>
+  
+   <property generated="never" lazy="false" name="picture" type="java.lang.String">
+   <column name="PICTURE"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="personId" type="int">
+   <column name="PERSONID"/>
+  </property>
+  
+  <property generated="never" lazy="false" name="state" type="java.lang.Integer">
+   <column name="STATE"/>
+  </property>
+ 
+  <property generated="never" lazy="false" name="playTime" type="java.util.Date">
+   <column  name="PLAYTIME" />
+  </property>
+  
+  <property generated="never" lazy="false" name="deadLine" type="java.util.Date">
+   <column  name="DEADLINE" />
+  </property>
+  
+  <property generated="never" lazy="false" name="limitNumber" type="java.lang.Integer">
+   <column  name="LIMITNUMBER" />
+  </property>
+  
+  <property generated="never" lazy="false" name="remainNumber" type="java.lang.Integer">
+   <column  name="REMAINNUMBER" />
+  </property>
+  
+    <property generated="never" lazy="false" name="price" type="java.lang.Double">
+   <column  name="PRICE" />
+  </property>
+     
+ </class>
+</hibernate-mapping>

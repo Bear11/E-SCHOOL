@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="splash_fense">#9966FF</color>
+    <color name="chengse">#FF6600</color>
+    <color name="white">#ffffff</color>
+    <color name="huise">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="hongse">#CC0033</color>
+    <color name="zone_title_bg">#12b7f5</color>
+    <color name="azure">#f0ffff</color>
+ <!-- 天蓝色 -->
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+    <color name="finder_mask">#60000000</color>
+    <color name="rea">#ffff0000</color>
+    <color name="blue">#0000ff</color>
+ <!-- 蓝色 -->
+    <color name="black">#000000</color>
+ <!-- 黑色 -->
+    <color name="loading_bg">#50000000</color>
+ <!-- 白色 -->
+ 
+    <color name="title_bg">#0db8f6</color><!--导航栏颜色，默认为天蓝色-->
+
+    <!-- 二维码功能 -->
+     
+     <color name="gray_bg">#fff0f0f0</color>
+     <color name="image_loading_bg">#ffefefef</color>
+    <color name="image_loading_bg_night">#ff2b2b2b</color>
+    <color name="list_foot_loading">#ff333333</color>
+ 
+
+</resources>

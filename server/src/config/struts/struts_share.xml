@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="EXT_share" extends="ext_web">
+		<action name="share_*" method="{1}"
+			class="com.ext.share.action.ShareAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="sharefc_*" method="{1}"
+			class="com.ext.share.action.ShareFirstCommentAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="sharesc_*" method="{1}"
+			class="com.ext.share.action.ShareSecondCommentAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="shareview_*" method="{1}"
+			class="com.ext.share.action.ShareViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+		<action name="sharefcview_*" method="{1}"
+			class="com.ext.share.action.ShareFirstCommentViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+    </package> 
+</struts>   

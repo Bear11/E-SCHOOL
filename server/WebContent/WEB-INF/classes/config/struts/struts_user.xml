@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="EXT_user" extends="ext_web">
+		<action name="user_*" method="{1}"
+			class="com.ext.user.action.UserAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="user1_*" method="{1}"
+			class="com.ext.user.action.MyInformationAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="user2_*" method="{1}"
+			class="com.ext.user.action.MyFollowAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="user3_*" method="{1}"
+			class="com.ext.user.action.MyGoodsAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="userShare_*" method="{1}"
+			class="com.ext.user.action.MyShareViewAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="collect_*" method="{1}"
+			class="com.ext.user.action.MyCollectAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+    </package>
+</struts>   

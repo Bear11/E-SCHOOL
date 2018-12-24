@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <!-- 活动详情页面 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <!-- 第二部分 图片预览 以及主题 -->
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" >
+
+                <FrameLayout
+                    android:id="@+id/help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:padding="3dip" >
+
+                    <ImageView
+                        android:id="@+id/pic_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_below="@id/help"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/paobuxuanyan"
+                    android:textColor="#101010"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <!-- 第三部分 活动详情 -->
+
+            <RelativeLayout
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/two"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_linerlayout" >
+
+                <TextView
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:background="#ffffff"
+                    android:text="@string/activitydetails"
+                    android:textColor="#101010"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hengxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_below="@id/theme"
+                    android:layout_marginTop="11dp"
+                    android:background="#eeeeee" />
+                <!-- 内容 -->
+
+                <RelativeLayout
+                    android:id="@+id/row_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hengxian"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/my_defalft_headpic" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toRightOf="@id/pic1"
+                        android:text="@string/faburen"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toRightOf="@id/text1"
+                        android:text="发布人昵称"
+                        android:textColor="#4e6cef"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_one"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_alarm" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pic2"
+                        android:text="@string/timeisup"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/timeup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text2"
+                        android:text="6-20 18:00"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_two"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_alarm" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pic3"
+                        android:text="@string/act_time"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/activity_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text3"
+                        android:text="6-22 08:00 到  6-22 18:00"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_three"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic4"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ico_weizhi" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pic4"
+                        android:text="@string/act_address"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text4"
+                        android:text="台中市雾峰区朝阳科技大学"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_four"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic6"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ico_weizhi" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pic6"
+                        android:text="@string/limit_number"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/act_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text6"
+                        android:text="25人"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_six"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="45dp"
+                        android:text="@string/shengyu"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/shengyu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text7"
+                        android:text="7张"
+                        android:textColor="#f04f6a"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/row_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_seven"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/pic8"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ico_weizhi" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/pic8"
+                        android:text="@string/activity_money"
+                        android:textColor="#101010"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/text8"
+                        android:text="免费"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <!-- 第三部分 活动详情描述 -->
+
+                <RelativeLayout
+                    android:id="@+id/nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_eight"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="13dp"
+                        android:background="#ffffff"
+                        android:text="@string/act_describe"
+                        android:textColor="#101010"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hengxian1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_below="@id/describe"
+                        android:layout_marginTop="11dp"
+                        android:background="#eeeeee" />
+
+                    <TextView
+                        android:id="@+id/describe_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hengxian1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#ffffff"
+                        android:lineSpacingExtra="3dp"
+                        android:text="伴随着夏日的阳光，我诚挚地邀请大家
+                                                                                                     来参与这个活动，这个活动是由我个人
+                                                                                                     召集的，希望大家有兴趣的可以加入进
+                                                                                                     来，我们一起奔跑~"
+                        android:textColor="#666666"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="#ccf0f0f0" >
+
+        <TextView
+            android:id="@+id/join"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="立即报名"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_like"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/join"
+            android:src="@drawable/icon_like_blue" />
+
+        <ImageView
+            android:id="@+id/img_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/join"
+            android:src="@drawable/icon_phone_blue" />
+    </RelativeLayout>
+
+    <!-- 第一部分 头部 -->
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"
+        android:src="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/xialakuang"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"
+        android:src="@drawable/icon_spring" />
+
+</RelativeLayout>
